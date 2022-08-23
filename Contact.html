@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="auther" content="Ali Alalawi" />
+    <meta
+      name="description"
+      content="This page contain all the thing i am learning how to creat as i learn html"
+    />
+
+    <title>Taco resturant</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to The Little Taco Shop</h1>
+
+      <nav>
+        <ul>
+          <li><a href="firstSimpleProject.html">Home</a></li>
+          <li><a href="#AboutLTS">AboutLTS</a></li>
+          <li><a href="OurMenue">Our Menue</a></li>
+          <li><a href="Store.html">Store Hours</a></li>
+        </ul>
+      </nav>
+
+      <img
+        src="tacos_close_up_400x260.png"
+        alt="Tacos and Drinks"
+        width="400"
+        height="260"
+      />
+
+      <figure>
+        <figcaption>Little Taco Shop Taco</figcaption>
+      </figure>
+
+      <hr />
+    </header>
+
+    <main>
+      <article>
+        <h3>Our Contact Form</h3>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send Us a Mesaage</legend>
+
+            <p>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+                required
+                autofocus
+                autocomplete="on"
+              />
+            </p>
+
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+                autocomplete="on"
+              />
+            </p>
+
+            <p>
+              <label for="message">Your message:</label>
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type you message here"
+                cols="30"
+                rows="10"
+                required
+                autocomplete="on"
+              ></textarea>
+            </p>
+
+            <p>
+              <button type="submit">submit</button>
+            </p>
+
+            <p>
+              <button
+                type="submit"
+                formaction="https://httpbin.org/post"
+                formmethod="post"
+              >
+                post
+              </button>
+            </p>
+
+            <p></p>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
